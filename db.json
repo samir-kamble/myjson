@@ -1,14 +1,32 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "CurrentStateAnalysis":{
+        "Description":"DescriptionText"
+    },
+    "RiskProfile":{
+        "RiskScore":10,
+        "RiskType":"Conservative",
+        "RiskDescription":"RiskDescriptionText",
+        "AllRiskTypes" : ["Conservative","Agressive","Moderate"],
+        "RiskProfileAttributes":[
+            {"Propensity":20},
+            {"Capacity":30},
+            {"Attitude":40}
+            ]
+    },
+    "Networth":{
+        "TotalAssets":234567,
+        "TotalLiabilities":112233,
+        "Networth" : 221133,
+        "Liablities" : [
+            {"ShortTermLiabilities":2233},
+            {"LongTermLiabilities":2233},
+            {"OtherLiabilities":2233}
+        ]
+    },
+    "AssetAllocation": 
+        [
+            {"AssetClass":"Equity","Amount":300000,"Percentage":70},
+            {"AssetClass":"Fixed Income","Amount":10,"Percentage":10},
+            {"AssetClass":"Liquid","Amount":1000,"Percentage":20}
+        ]
 }
